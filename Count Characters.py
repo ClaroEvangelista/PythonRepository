@@ -1,6 +1,5 @@
 """
 6.1.9.16 - count characters and sort the dictionary using lambda
-Maps and Lambdas
 Original designed to take an input() but got tired of cutting and pasting
 """
 
