@@ -21,14 +21,14 @@ for x in range(10):
         print('x is an even number: ', x)
 ```
 
-##** Ordered List **##
+## Ordered List ##
 1. One
    1. One and 1/2
    2. One and 3/4
 2. Two
 3. Three
 
-##** Unordered List **##
+## Unordered List ##
 * One
   * One and 1/2
 * Two
