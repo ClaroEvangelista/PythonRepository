@@ -1,7 +1,17 @@
 # Welcome to my PythonRepository
 ## I'm learning **GitHub** *Flavored* Markdown
 
+@ClaroEvangelista
+
 :sunglasses:
+
+__BOLD__
+
+_italic_
+
+__*BOLD italic*__
+
+~Strikethrough~
 
 [Yahoo!](https://www.Yahoo.com/)
 
@@ -29,6 +39,10 @@ title1 | title2
 ---------| ---------
 elem1  | elem2
 elem3  | elem4
+
+  ## Task List ##
+- [ ] Incomplete Task 
+- [x] Completed Task 
 
 [<img src="Me1.jpg" width="250"/>](Me1.jpg)
 
