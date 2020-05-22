@@ -24,6 +24,12 @@ for x in range(10):
 * Two
 * Three
 
+  ## Table ##
+title1 | title2
+---------| ---------
+elem1  | elem2
+elem3  | elem4
+
 [<img src="Me1.jpg" width="250"/>](Me1.jpg)
 
-![This is me!](Me1.jpg)
+![<This is me!>](Me1.jpg)
