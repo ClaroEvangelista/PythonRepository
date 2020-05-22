@@ -1,4 +1,27 @@
-# 6.1.9.17
+"""
+6.1.9.17
+Originally this was designed to take an input() but I got tired of copying and pasting so I hard-coded
+We were instructed to create new exceptions and to test them out
+Just uncomment the scrname lines below to test for different scenarios
+
+Notes.txt:             <<< this is the good input, it has fname, lname and score, 3 elements
+John Smith 5
+Anna Boleyn 4.5
+John Smith 2           <<< dupe #1 will be merged into 1 line and John's score will 5 + 2 = 7
+Anna Boleyn 11         <<< dupe #2 wiil be merged into 1 line and Anna's score will 4.5 + 11 = 15.5
+Andrew Cox 1.5
+
+badline.txt:           <<< used for badline exception testing
+John Smith 5
+Anna Boleyn 4.5
+one two three four     <<< this will cause a badline exception
+
+Output (sorted by dict key):
+Andrew Cox 1.5
+Anna Boleyn 15.5
+John Smith 7.0
+"""
+
 from os import strerror
 
 class StudentsDataException(Exception):
@@ -16,11 +39,11 @@ inputx = ''
 dic = {}
 fullname = ''
 # srcname = input("Please select Prof. Jekyll's file: ")  # C:\Users\owner\PycharmProjects\MyProj\notes.txt
-# srcname = "C:\\Users\\owner\\PycharmProjects\\MyProj\\filedoesNOTexist.txt"
-# srcname = "C:\\Users\\owner\\PycharmProjects\\MyProj\\empty.txt"
-# srcname = "C:\\Users\\owner\\PycharmProjects\\MyProj\\badline.txt"
-# srcname = "C:\\Users\\owner\\PycharmProjects\\MyProj\\notes.txt"
-srcname = "C:/Users/owner/PycharmProjects/MyProj/notes.txt"
+# srcname = "C:\\Users\\owner\\PycharmProjects\\MyProj\\filedoesNOTexist.txt"  # will cause IOError exception
+# srcname = "C:\\Users\\owner\\PycharmProjects\\MyProj\\empty.txt"             # will cause FileEmpty exception
+# srcname = "C:\\Users\\owner\\PycharmProjects\\MyProj\\badline.txt"           # will cause BadLine exception
+# srcname = "C:\\Users\\owner\\PycharmProjects\\MyProj\\notes.txt"             # good file: double \ windows style
+srcname = "C:/Users/owner/PycharmProjects/MyProj/notes.txt"                    # also good: single / linux style
 # Note: Python uses the \ as an escape character (like \n) # 6.1.8.3
 try:
     src = open(srcname, "rt")

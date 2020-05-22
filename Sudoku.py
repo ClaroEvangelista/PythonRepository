@@ -3,7 +3,7 @@
 This my version of the Sudoku game
 Choose between goodsudoku or badsudoku
 Note: sudokupassorfail is used as the grand daddy of Pass or Fail
-      white passorfail is used when checking horizontally, vertically and when checking the 9 3x3 cubes.
+      while passorfail is used when checking horizontally, vertically and when checking the 9 3x3 cubes.
       Any single 'Fail' will fail the sudoku
 """
 
