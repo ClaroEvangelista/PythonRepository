@@ -2,7 +2,7 @@
 6.1.9.17
 Originally this was designed to take an input() but I got tired of copying and pasting so I hard-coded
 We were instructed to create new exceptions and to test them out
-Just uncomment the scrname lines below to test for different scenarios
+Just uncomment the srcname lines below to test for different scenarios
 
 Notes.txt:             <<< this is the good input, it has fname, lname and score, 3 elements
 John Smith 5
